@@ -1,52 +1,153 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="app.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to K's Work</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Reset */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Background Image */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://i.pinimg.com/originals/23/d6/63/23d663741021ea6c5ebad0fc3798e186.gif') no-repeat center center;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    /* Translucent Container */
+    .container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(100% - 6rem); /* 3rem margin on both sides */
+      height: 100%;
+      margin: 0 3rem;
+      background: rgba(0, 0, 0, 0.5); /* Translucent overlay */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 50px;
+      box-sizing: border-box;
+    }
+
+    /* Main Heading Styles */
+    .main-heading {
+      color: white;
+      margin: 0;
+      line-height: 1;
+    }
+
+    .main-heading .welcome {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+
+    .main-heading .to {
+      font-size: 2rem;
+      font-style: italic;
+      font-family: 'Dancing Script', cursive;
+    }
+
+    .main-heading .ks-work {
+      font-size: 3.5rem;
+      font-family: 'Comic Sans MS', cursive, sans-serif; /* Bubbly font */
+      display: flex;
+      gap: 5px;
+    }
+
+    /* Animation for "K's Work" */
+    .main-heading .ks-work span {
+      display: inline-block;
+      animation: bounce 2s infinite ease-in-out;
+    }
+
+    .main-heading .ks-work span:nth-child(odd) {
+      animation-delay: 0.2s;
+    }
+
+    .main-heading .ks-work span:nth-child(even) {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* Content Styling */
+    .content {
+      margin-top: 20px;
+      color: white;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      max-width: 800px;
+    }
+
+    /* Social Media Links */
+    .social-links {
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      color: white;
+      font-size: 1.5rem;
+      margin-right: 15px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #FFD700; /* Gold color on hover */
+    }
+  </style>
 </head>
 <body>
-                                        <style>
-                                          body {
-                                            background-image: url('https://i.pinimg.com/736x/cf/93/b3/cf93b3d29bfb98379272df6c4e975eb0.jpg');
-                                            background-size: cover;
-                                            background-repeat: no-repeat;
-                                            background-attachment: fixed;
-                                          }
-                                        </style>
-  <h1 style="text-align: center;">HELLO WORLD!</h1>
+  <!-- Translucent Content Container -->
+  <div class="container">
+    <!-- Main Heading -->
+    <h1 class="main-heading">
+      <span class="welcome">Welcome</span><br>
+      <span class="to">to</span><br>
+      <span class="ks-work">
+        <span>K</span>
+        <span>'</span>
+        <span>s</span>
+        <span> </span>
+        <span>W</span>
+        <span>o</span>
+        <span>r</span>
+        <span>k</span>
+      </span>
+    </h1>
 
-                                    <h2 style="text-align: center;"> Welcome to Vitamin SEA!</h2>
+    <!-- Content Section -->
+    <div class="content">
+      <p>
+        Welcome to my portfolio! This website showcases my work, projects, and creative journey. 
+        Explore the interactive elements and discover the passion behind every detail. Let the 
+        journey inspire you!
+      </p>
+    </div>
 
-                  <p1 style="text-align: center;">I come from beneath the waves, a world touched by sunlight and carried by the gentle embrace of ocean 
-                    currents. My neighbors range from playful fish to shy turtles, with curious tourists visiting every now 
-                    and then. My reefs are vibrant homes, bustling with life and color, where every creature plays a role in 
-                    the rhythm of the ocean’s dance. Together, we make the ocean alive—a symphony of hues and movement that
-                     mirrors the heartbeat of the sea.</p1>
-
-
-                                    <p2 style="text-align: center;"> I am a CORAL, the quiet architect of this underwater paradise.</p2>
-                                    
-                                    <img src="coral 2.png" alt="">
-
-                                    <a href="https://www.youtube.com/watch?v=Nu04lo1ofKI" target="_blank">Take a peek into my world!</a>
-
-                                    
-                      
-
-   <!-- ## Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, cumque. Aperiam iusto suscipit obcaecati temporibus quisquam, totam iure excepturi repellendus eum itaque sed asperiores. Repellat, nulla alias? Tenetur, accusamus doloremque. -->
-
-    <script src="app.js"></script>
+    
+  </div>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
