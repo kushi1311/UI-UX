@@ -1,0 +1,117 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            margin: 20px;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            justify-content: flex-start; /* Align items to the top */
+            padding-top: 20px;
+        }
+
+        .content {
+            max-width: 800px;
+        }
+        
+        h1 {
+    font-size: 250px;
+    margin-bottom: 20px;
+    font-family: 'Aloja', sans-serif;
+    animation: fontCycle 4s infinite;
+        }
+
+        @keyframes fontCycle {
+            0% { font-family: 'Aloja', sans-serif; }
+            25% { font-family: 'Courier New', Courier, monospace; }
+            50% { font-family: 'Georgia', serif; }
+            75% { font-family: 'Lucida Console', monospace; }
+            100% { font-family: 'Aloja', sans-serif; }
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.2);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-container.music {
+            margin-top: 40px;
+    
+        }
+        .image-container.music img {
+            width: 150px;
+            height: 100px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+    .image-container img {
+        width: 350px;
+        height: 250px;
+    }
+    </style>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="background_music.mp3" type="audio/mpeg">
+    </audio>
+        
+    <h1>Web Analysis</h1>
+
+    <!-- Images section -->
+    <div class="image-container">
+        <img src="nomadic_tribe.png" alt="Image 1" onclick="window.location.href='nomadictribe.html';">
+        <img src="last_christmas.png" alt="Image 2" onclick="window.location.href='lastxmas.html';">
+        <img src="defeat_boco.png" alt="Image 3" onclick="window.location.href='boco.html';">
+    </div>
+        <br>
+    <!-- Music section -->
+    <div class="image-container music">
+        <img src="https://petapixel.com/assets/uploads/2022/12/foxwell-2.gif" alt="Click to Play Music" onclick="playMusic()">
+        <p>Click on the leaf for sound</p>
+    </div>
+    
+    <audio id="background-audio" loop>
+        <source src="background_music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script>
+        const audio = document.getElementById('background-audio');
+    
+        function playMusic() {
+            audio.play();
+        }
+    </script>
+
+</body>
+</html>
+
+
