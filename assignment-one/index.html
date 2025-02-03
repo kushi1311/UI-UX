@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web research</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #video-container {
+            position: relative;
+            text-align: center;
+        }
+
+        video {
+            max-width: 100%;
+            max-height: 100vh;
+        }
+
+        #popup-link {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+            animation: pop 2s infinite, color-change 2s infinite;
+        }
+
+        @keyframes pop {
+            0%, 100% {
+                transform: translate(-50%, -50%) scale(1);
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.5);
+            }
+        }
+
+        @keyframes color-change {
+            0% {
+                color: white;
+            }
+            50% {
+                color: yellow;
+            }
+            100% {
+                color: cyan;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="video-container">
+        <video id="intro-video" autoplay muted >
+            <source src="vid_web_1_demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            
+        </video>
+        <a id="popup-link" href="about.html">Click here</a>
+    </div>
+
+    <script>
+        const popupLink = document.getElementById('popup-link');
+
+        setTimeout(() => {
+            popupLink.style.display = 'block';
+        }, 32500); // Display link after 32.5 seconds
+    </script>
+    
+</body>
+</html>
+
