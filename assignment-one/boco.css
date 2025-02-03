@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: white;
+    background: url('https://i.pinimg.com/originals/33/15/58/33155836a04c8dd0280763ad4eb957df.gif') no-repeat center center fixed; /* Replace with your image */
+    background-size: cover;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Heading Styling */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Content Container Styling */
+.content-container {
+    max-width: 800px;
+    margin: 0 auto; /* Center content */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Paragraphs */
+p {
+    margin: 15px 0;
+    line-height: 1.8;
+}
+
+/* Links */
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Videos */
+video {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
