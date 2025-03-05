@@ -1,0 +1,21 @@
+h1 {
+    border-radius: 15px;
+    text-align: center;
+    font-size: 50px;
+    font-family: fantasy;
+    color: #000000;
+    letter-spacing: 2px;
+}
+
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.pinimg.com/736x/2c/e2/aa/2ce2aaa628850ef90652671a6c4538d9.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgba(72, 72, 72, 0.8);
+    background-blend-mode: lighten;
+}
