@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Welcome to K's Work</title>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    /* General Reset */
     body {
       margin: 0;
       padding: 0;
@@ -14,7 +13,6 @@
       overflow: hidden;
     }
 
-    /* Background Image */
     body::before {
       content: "";
       position: fixed;
@@ -27,15 +25,14 @@
       z-index: -1;
     }
 
-    /* Translucent Container */
     .container {
       position: absolute;
       top: 0;
       left: 0;
-      width: calc(100% - 6rem); /* 3rem margin on both sides */
+      width: calc(100% - 6rem);
       height: 100%;
       margin: 0 3rem;
-      background: rgba(0, 0, 0, 0.5); /* Translucent overlay */
+      background: rgba(0, 0, 0, 0.5);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -44,7 +41,6 @@
       box-sizing: border-box;
     }
 
-    /* Main Heading Styles */
     .main-heading {
       color: white;
       margin: 0;
@@ -64,12 +60,11 @@
 
     .main-heading .ks-work {
       font-size: 3.5rem;
-      font-family: 'Comic Sans MS', cursive, sans-serif; /* Bubbly font */
+      font-family: 'Comic Sans MS', cursive, sans-serif;
       display: flex;
       gap: 5px;
     }
 
-    /* Animation for "K's Work" */
     .main-heading .ks-work span {
       display: inline-block;
       animation: bounce 2s infinite ease-in-out;
@@ -92,7 +87,6 @@
       }
     }
 
-    /* Content Styling */
     .content {
       margin-top: 20px;
       color: white;
@@ -101,28 +95,34 @@
       max-width: 800px;
     }
 
-    /* Social Media Links */
-    .social-links {
-      margin-top: 20px;
+    /* Portfolio links styled in two columns */
+    .links-wrapper {
+      display: flex;
+      gap: 3rem;
+      margin-top: 2rem;
+      color: white;
+      font-size: 1.2rem;
+      flex-wrap: wrap;
     }
 
-    .social-links a {
+    .links-wrapper div p {
+      margin: 0.3rem 0;
+    }
+
+    .links-wrapper a {
       color: white;
-      font-size: 1.5rem;
-      margin-right: 15px;
       text-decoration: none;
       transition: color 0.3s ease;
     }
 
-    .social-links a:hover {
-      color: #FFD700; /* Gold color on hover */
+    .links-wrapper a:hover {
+      color: #FFD700;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <!-- Translucent Content Container -->
   <div class="container">
-    <!-- Main Heading -->
     <h1 class="main-heading">
       <span class="welcome">Welcome</span><br>
       <span class="to">to</span><br>
@@ -138,7 +138,6 @@
       </span>
     </h1>
 
-    <!-- Content Section -->
     <div class="content">
       <p>
         Welcome to my portfolio! This website showcases my work, projects, and creative journey. 
@@ -147,19 +146,26 @@
       </p>
     </div>
 
-    <p>1. <a href="https://kushi1311.github.io/UI-UX/hello-world/">Hello world</a></p>
-    <p>2. <a href="https://kushi1311.github.io/UI-UX/assignment-one/">Assignment 1</a></p>
-     <p>3. <a href="https://kushi1311.github.io/UI-UX/exercise-1/">Exercise 1</a></p>
-     <p>4. <a href="https://kushi1311.github.io/UI-UX/exercise-2/">Exercise 2</a></p>
-    <p>5. <a href="https://kushi1311.github.io/UI-UX/exercise-3/">Exercise 3</a></p>
-    <p>6. <a href="https://kushi1311.github.io/UI-UX/exercise-4/">Exercise 4</a></p>
-    <p>7. <a href="https://kushi1311.github.io/UI-UX/exercise-5/">Exercise 5</a></p>
-     <p>8. <a href="https://kushi1311.github.io/UI-UX/Assignment-2/">Assignment 2</a></p>
-    <p>9. <a href="https://kushi1311.github.io/UI-UX/exercise-6/">Exercise 6</a></p>
-    <p>10. <a href="https://kushi1311.github.io/UI-UX/Assignment-2-story/">Assignment 2 story webpage</a></p>
-     <p>11. <a href="https://kushi1311.github.io/UI-UX/assignment-3/A3-BoilerPlate directory/">Assignment 3</a></p>
+    <!-- Portfolio Links in Two Columns -->
+    <div class="links-wrapper">
+      <!-- Column 1 -->
+      <div>
+        <p>1. <a href="https://kushi1311.github.io/UI-UX/hello-world/">Hello world</a></p>
+        <p>2. <a href="https://kushi1311.github.io/UI-UX/assignment-one/">Assignment 1</a></p>
+        <p>3. <a href="https://kushi1311.github.io/UI-UX/exercise-1/">Exercise 1</a></p>
+        <p>4. <a href="https://kushi1311.github.io/UI-UX/exercise-2/">Exercise 2</a></p>
+        <p>5. <a href="https://kushi1311.github.io/UI-UX/exercise-3/">Exercise 3</a></p>
+      </div>
 
-    
+      <!-- Column 2 -->
+      <div>
+        <p>6. <a href="https://kushi1311.github.io/UI-UX/exercise-4/">Exercise 4</a></p>
+        <p>7. <a href="https://kushi1311.github.io/UI-UX/exercise-5/">Exercise 5</a></p>
+        <p>8. <a href="https://kushi1311.github.io/UI-UX/Assignment-2/">Assignment 2</a></p>
+        <p>9. <a href="https://kushi1311.github.io/UI-UX/exercise-6/">Exercise 6</a></p>
+        <p>10. <a href="https://kushi1311.github.io/UI-UX/assignment-3">Assignment 3</a></p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
